@@ -10,6 +10,13 @@ body{
     background-color: #212121;
 }
 
-.test{
+.main-div{
     text-align: center;
+}
+
+.braincell{
+    border: white;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
 }
