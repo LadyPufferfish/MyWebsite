@@ -30,15 +30,3 @@ body{
     display: flex;
     column-gap: 300px;
 }
-
-.calculators{
-    padding-top: 10px;
-}
-
-.calc-dropdown{
-    padding: 5px;
-    border: #f5f5f5 solid 2px;
-    border-radius: 6px;
-    font-size: 35px;
-    font-weight: 700;
-}
