@@ -9,7 +9,7 @@ html{
 body{
     background: 
         url("./mountain2.png") bottom center / contain no-repeat, 
-        linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(41, 0, 60, 1) 100%);
+        linear-gradient(rgba(0, 0, 0, 1), rgba(41, 0, 60, 1));
 }
 
 .main-div{
