@@ -42,6 +42,10 @@ html{
 }
 /*chatgpt star segment end*/
 
+.emoji {
+    vertical-align: middle;
+}
+
 .main-div{
     height: 100vh;
     width: 100vw;
