@@ -54,4 +54,4 @@ for (let i = 0; i < numberOfStars; i++) {
     createStar();
 }
 // Create shooting stars periodically
-setInterval(createShootingStar, Math.random()*4000); // Every 2 seconds
+setInterval(createShootingStar, 2000); // Every 2 seconds
