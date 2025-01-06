@@ -12,9 +12,7 @@ function createStar() {
     starrySky.appendChild(star);
 }
 
-for (let i = 0; i < numberOfStars; i++) {
-    createStar();
-}
+
 
 /* Shooting star creation, by ChatGPT */
 function createShootingStar() {
@@ -52,5 +50,8 @@ function createShootingStar() {
     }, 2000); // Match the animation duration
 }
 
+for (let i = 0; i < numberOfStars; i++) {
+    createStar();
+}
 // Create shooting stars periodically
 setInterval(createShootingStar, Math.random()*4000); // Every 2 seconds
