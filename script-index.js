@@ -24,7 +24,7 @@ function createShootingStar() {
     const star = document.createElement('div');
     star.classList.add('shooting-star');
     // Randomize starting position slightly outside the viewport
-    const startX = Math.random() * window.innerWidth; // Random starting x-coordinate
+    const startX = Math.random() * window.innerWidth - window.innerWidth/5; // Random starting x-coordinate
     const startY = Math.random() * -300; // Slightly above the top of the viewport
 
     // Randomize movement direction to keep it dynamic
