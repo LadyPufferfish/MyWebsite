@@ -2,7 +2,7 @@ const starrySky = document.querySelector('.starry-sky');
 const container = document.querySelector('.shooting-star-container');
 const numberOfStars = 400;
 let counter = 0;
-const colors = ['.shooting-star-blue', '.shooting-star-pink', '.shooting-star', '.shooting-star-pink', '.shooting-star-blue']
+const colors = ['linear-gradient(to bottom, #5bcefa, rgba(0, 0, 0, 0))', 'linear-gradient(to bottom, #f5a9b8, rgba(0, 0, 0, 0))', 'linear-gradient(to bottom, white, rgba(0, 0, 0, 0))', 'linear-gradient(to bottom, #f5a9b8, rgba(0, 0, 0, 0))', 'linear-gradient(to bottom, #5bcefa, rgba(0, 0, 0, 0))']
 
 /* Normal star creation, by ChatGPT */
 function createStar() {
@@ -22,11 +22,10 @@ function createShootingStar() {
         counter = 0;
     }
     const star = document.createElement('div');
-    star.classList.add(colors[counter]);
-    counter++;
+    star.classList.add('shooting-star');
     // Randomize starting position slightly outside the viewport
     const startX = Math.random() * window.innerWidth; // Random starting x-coordinate
-    const startY = Math.random() * -900; // Slightly above the top of the viewport
+    const startY = Math.random() * -300; // Slightly above the top of the viewport
 
     // Randomize movement direction to keep it dynamic
     const endX = startX + (Math.random() * 300 - 150); // Random horizontal offset
@@ -35,6 +34,9 @@ function createShootingStar() {
     // Position the star initially
     star.style.left = `${startX}px`;
     star.style.top = `${startY}px`;
+
+    star.style.background = colors[counter];
+    counter = (counter + 1) % colors.length;
 
     // Randomize speed (animation duration)
     const randomDuration = Math.random() * 1 + 2; // Between 1.5s and 2.5s

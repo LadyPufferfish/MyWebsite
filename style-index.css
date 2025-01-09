@@ -56,21 +56,21 @@ html{
 }
 
 .shooting-star {
-    position: relative;
+    position: absolute;
     width: 2px;
     height: 100px;
-    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0)); /* Corrected gradient direction */
+    background: linear-gradient(to bottom, white, rgba(0, 0, 0, 0)); /* Corrected gradient direction */
     opacity: 0.8;
     transform: rotate(135deg); /* Proper angle for diagonal movement */
     animation: shooting-star 2s linear;
 }
 
 .shooting-star-blue {
-    position: relative;
+    position: absolute;
     width: 2px;
     height: 100px;
-    background: linear-gradient(to bottom, rgb(91 206 250), rgba(255, 255, 255, 0)); /* Corrected gradient direction */
-    opacity: 0.8;
+    background: linear-gradient(to bottom, #5bcefa, rgba(0, 0, 0, 0)); /* Corrected gradient direction */
+    opacity: 1;
     transform: rotate(135deg); /* Proper angle for diagonal movement */
     animation: shooting-star 2s linear;
 }
@@ -79,8 +79,8 @@ html{
     position: relative;
     width: 2px;
     height: 100px;
-    background: linear-gradient(to bottom, rgb(245 169 184), rgba(255, 255, 255, 0)); /* Corrected gradient direction */
-    opacity: 0.8;
+    background: linear-gradient(to bottom, #f5a9b8, rgba(0, 0, 0, 0)); /* Corrected gradient direction */
+    opacity: 1;
     transform: rotate(135deg); /* Proper angle for diagonal movement */
     animation: shooting-star 2s linear;
 }
