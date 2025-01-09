@@ -1,6 +1,8 @@
 const starrySky = document.querySelector('.starry-sky');
 const container = document.querySelector('.shooting-star-container');
 const numberOfStars = 400;
+let counter = 0;
+const colors = ['.shooting-star-blue', '.shooting-star-pink', '.shooting-star', '.shooting-star-pink', '.shooting-star-blue']
 
 /* Normal star creation, by ChatGPT */
 function createStar() {
@@ -16,12 +18,15 @@ function createStar() {
 
 /* Shooting star creation, by ChatGPT */
 function createShootingStar() {
+    if (counter == 4) {
+        counter = 0;
+    }
     const star = document.createElement('div');
-    star.classList.add('shooting-star');
-
+    star.classList.add(colors[counter]);
+    counter++;
     // Randomize starting position slightly outside the viewport
     const startX = Math.random() * window.innerWidth; // Random starting x-coordinate
-    const startY = Math.random() * -300; // Slightly above the top of the viewport
+    const startY = Math.random() * -900; // Slightly above the top of the viewport
 
     // Randomize movement direction to keep it dynamic
     const endX = startX + (Math.random() * 300 - 150); // Random horizontal offset
