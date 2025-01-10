@@ -18,9 +18,7 @@ function createStar() {
 
 /* Shooting star creation, by ChatGPT */
 function createShootingStar() {
-    if (counter == 4) {
-        counter = 0;
-    }
+
     const star = document.createElement('div');
     star.classList.add('shooting-star');
     // Randomize starting position slightly outside the viewport
@@ -36,7 +34,7 @@ function createShootingStar() {
     star.style.top = `${startY}px`;
 
     star.style.background = colors[counter];
-    counter = (counter + 1) % colors.length;
+    counter = (counter + 1) % (colors.length);
 
     // Randomize speed (animation duration)
     const randomDuration = Math.random() * 1 + 2; // Between 1.5s and 2.5s
