@@ -51,7 +51,6 @@ html{
     left: 0;
     width: 100vw;
     height: 100vh;
-    overflow:scroll;
     pointer-events: none; /* Prevent interaction */
 }
 
@@ -103,8 +102,7 @@ html{
 }
 
 .main-div{
-    height: 98vh;
-    width: 100vw;
+    height: 100vh;
     position: relative;
     text-align: center;
     padding: 0% 5% 0% 5%;
