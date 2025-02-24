@@ -97,6 +97,16 @@ html{
 
 /*ChatGPT Shooting star segment end*/
 
+#gif {
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
 a {
     color: #cc5dff;
 }
@@ -112,6 +122,7 @@ a {
     padding: 0% 5% 0% 5%;
     z-index: 2;
     background: url("./mountain.png") bottom center / contain no-repeat;
+    align-items: flex-end;
 }
 
 .content{

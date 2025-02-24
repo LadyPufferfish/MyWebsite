@@ -60,3 +60,26 @@ for (let i = 0; i < numberOfStars; i++) {
 }
 // Create shooting stars periodically
 setInterval(createShootingStar, 2000); // Every 2 seconds
+
+//function to allow gif to play on click
+document.addEventListener("DOMContentLoaded", function () {
+    let img = document.getElementById("gif");
+
+    img.addEventListener("click", function () {
+        let gifSrc = img.dataset.gif;
+        let staticSrc = img.dataset.static;
+
+        // Create a temporary image to preload the GIF
+        let tempImg = new Image();
+        tempImg.src = gifSrc;
+
+        tempImg.onload = function () {
+            img.src = gifSrc;
+
+            // Reset to static image after a set duration (adjust if needed)
+            setTimeout(() => {
+                img.src = staticSrc;
+            }, 1350); // Adjust time to match GIF duration
+        };
+    });
+});
