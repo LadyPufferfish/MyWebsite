@@ -13,10 +13,30 @@
     <div class="shooting-star-container"></div>
     <div class="main-div">
         <h1>Welcome to this humble corner of the universe!</h1>
-        <p>I am 16 (she/her), you can call me Claire! I like computers (duh?), physics and astronomy, and video games!</p>
+        <p>I am 16 (she/her), you can call me Claire! I like computers (duh?), physics and astronomy, and <span class="games-button" onclick="gamesAnimation(games)">video games</span>!</p>
         <img id="gif" src="./transheart.png" data-gif="transheart.gif" data-static="transheart.png">
-        <footer><a href="./index-no-text.html">A link to a plain version of this page!</a></footer>
+        <div class="games">
+            <div class="games-item" id="celeste">
+                <h2>Celeste</h2>
+                <div id="games-subdiv">
+                    <img src="./celeste.png" alt="celeste box art" width="100px" height="150px" class="celeste-img">
+                    <p>Imo the best game ever. It is a precision platformer so you WILL die a lot! But the controls are very fair, tight and fun. You can dash, jump and climb/jump away from walls. There is a very big modding and speedrunning community around this game, and everyone is genuinely super nice. Oh right and there are strawberries. Collect them. NOW!</p>
+                </div>
+            </div>
+            <div class="games-item" id="wilds">
+                <h2>Outer Wilds</h2>
+                <div id="games-subdiv">
+                    <img src="./outerWilds.jpg" alt="outer wilds steam art" width="100px" height="150px">
+                    <p>I can genuinely NOT tell you ANYTHING about this game without somewhat ruining the experience. You simply HAVE to avoid ANY AND ALL SPOILERS if you want to have the best experience with this game. So, avoid all spoilers and go play it! The most I can tell you about this game is the following: Space-simulator-exploration knowledge-based game.</p>
+                </div>
+            </div>
+            <div class="games-item" id="undertale">
+                <img src="./undertale.png" alt="Undertale" width="300px" height="40px">
+                <p>Untertale is not necessarily for everyone but it is still incredibly fun. It has one of the best soundtracks in all of gaming. It is an RPG where you don't HAVE to kill anyone! ...you CAN kill everyone! But there will be consequences.</p>
+            </div>
+        </div>
     </div>
+    <footer><a href="./index-no-text.html">A link to a plain version of this page!</a></footer>
     <script src="script-index.js"></script>
 </body>
 </html>

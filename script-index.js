@@ -3,6 +3,8 @@ const container = document.querySelector('.shooting-star-container');
 const numberOfStars = 400;
 let counter = 0;
 const colors = ['linear-gradient(to bottom, #5bcefa, rgba(0, 0, 0, 0))', 'linear-gradient(to bottom, #f5a9b8, rgba(0, 0, 0, 0))', 'linear-gradient(to bottom, white, rgba(0, 0, 0, 0))', 'linear-gradient(to bottom, #f5a9b8, rgba(0, 0, 0, 0))', 'linear-gradient(to bottom, #5bcefa, rgba(0, 0, 0, 0))']
+const gamesButton = document.querySelector('.games-button')
+const games = document.querySelector('.games')
 
 /* Normal star creation, by ChatGPT */
 function createStar() {
@@ -83,3 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     });
 });
+
+function gamesAnimation(element) {
+    element.classList.toggle("open")
+}

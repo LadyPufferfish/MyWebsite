@@ -105,6 +105,7 @@ footer {
     position: fixed;
     bottom: 10px;
     left: 10px;
+    z-index: 2;
 }
 
 a {
@@ -119,10 +120,74 @@ a {
     height: 100vh;
     position: relative;
     text-align: center;
-    padding: 0% 5% 0% 5%;
+    /*padding: 0% 5% 0% 5%;*/
     z-index: 2;
     background: url("./mountain.png") bottom center / contain no-repeat;
     align-items: flex-end;
+}
+
+img {
+    flex-shrink: 0;
+}
+
+.games-button {
+    cursor: pointer;
+    color: #cc5dff;
+}
+
+.games {
+    display: flex;
+    column-gap: 40px;
+    overflow: hidden;
+    max-width: 0;
+    opacity: 0;
+    transition: max-width 0.5s ease-out, opacity 0.3s ease-out;
+}
+
+.games.open {
+    max-width: 1900px;
+    opacity: 1;
+}
+
+@keyframes games-open {
+    0% {
+        transform: translate(100px, 100px)
+    }
+    100% {
+        transform: translate(500px, 100px);
+    }
+}
+
+.gamesAnimation {
+    animation: games-open 0.5s ease;
+}
+
+.games-item {
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    font-size: smaller;
+}
+
+#celeste {
+    background-color: #45889c;
+    border: 3px solid #155968;
+    font-size: smaller;
+    padding: 0px 10px 0px 10px;
+}
+
+#games-subdiv {
+    display: flex;
+}
+
+#wilds {
+    background-color: #cf7c1c;
+    border: 3px solid #BB5312;
+}
+
+#undertale {
+    background-color: black;
+    border: 3px solid white;
 }
 
 .content{
