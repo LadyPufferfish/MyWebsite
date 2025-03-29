@@ -167,13 +167,14 @@ img {
     width: 350px;
     height: 350px;
     font-size: smaller;
+    padding: 0px 10px 0px 10px;
 }
 
 #celeste {
     background-color: #45889c;
     border: 3px solid #155968;
     font-size: smaller;
-    padding: 0px 10px 0px 10px;
+    
 }
 
 #games-subdiv {
